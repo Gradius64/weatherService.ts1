@@ -44,3 +44,14 @@ const displayWeather = async (city: string) => {
       console.error(error.message);
     }
 }
+
+
+
+    // Map the response data to the WeatherData interface
+    export interface WeatherData {
+        location: string;
+        temperature: number;
+        description: string;
+        humidity: number;
+        windSpeed: number;
+      }
